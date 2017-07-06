@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/apply.css" media="screen">
+    <title>会议室申请界面</title>
+</head>
+<!--嘻嘻-->
+<script type="text/javascript" src="jQuery-2.2.4.min.js"></script>
+<script type="text/javascript" src="xs.js"></script>
+
+
+<body id="main">
+<div id="input" class="fonts">
+    <div id="selectleft">
+        <!--<p style="margin-top: 30px;"> 公司楼层：
+            <select name="" style="width: 155px;height: 26px;">
+                <option value="1">1搂</option>
+                <option value="2">2搂</option>
+                <option value="3">3搂</option>
+                <option value="4">4搂</option>
+                <option value="5">5搂</option>
+                <option value="6">6搂</option>
+            </select>
+        </p>-->
+        <form method="post" action="apply.jsp" onSubmit="return validate(this) "
+              style="font-size: 21px;font-family: 华文行楷;">
+            <p style="margin-top: 30px;"> 会议室号：
+                <select name="roomidselect" style="width: 155px;height: 26px;" id="roomidselect">
+                    <option value="F01M01">F01M01</option>
+                    <option value="F01M12">F01M12</option>
+                    <option value="F02M02">F02M02</option>
+                    <option value="F02M03">F02M03</option>
+                    <option value="F02M07">F02M07</option>
+                    <option value="F04M04">F04M04</option>
+                    <option value="F04M05">F04M05</option>
+                    <option value="F04M06">F04M06</option>
+                    <option value="F04M07">F04M07</option>
+
+                </select>
+            </p>
+
+            <p style="margin-top: 30px;"> 申请部门：
+                <input id="department" name="department" type="text"
+                       style="background: cornsilk;border:1px solid #FFDEAD"/>
+            </p>
+
+            <p style="margin-top: 30px;"> &nbsp;&nbsp;&nbsp;申请人：
+                <input id="apply_people" type="text" name="apply_people"/>
+            </p>
+
+            <p style="margin-top: 30px;"> 开始时间：
+                <input type="date" value="2017-05-12" id="startdate" name="startdate"/>
+                <input type="time" value="21:48" id="starttime" name="starttime"/>
+            </p>
+
+            <p style="margin-top: 30px;"> 会议时长：
+                <input type="txt" value="" placeholder="分钟" id="time" name="time"/>
+            </p>
+
+            <!--上面试一个表单 提交到apply.jsp来为数据库添加数据-->
+
+            <div style="width: 550px;height: 150px;background-color: rgba(255,235,205,0.6); margin-left: 30px;font-family: 华文行楷;">
+
+                <p style="margin: 30px;">
+                <p style="margin-top: 50px;margin-left: 0px;font-size: 19px;padding: 18px;" class="detial">
+                    静电复印机、数字式多功能一体机、数字印刷机,支票打印机、考勤机、点钞机、过塑机、名片扫描仪、电话机。加湿器、饮水机、电风扇、吸尘器。</p>
+                </p>
+            </div>
+
+            <div style="margin-left:480px ;margin-top: 10px;">
+
+                <style type="text/css">
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    a {
+                        color: #999;
+                        text-decoration: none;
+                    }
+
+                    button {
+                        list-style: none;
+                    }
+
+                    body {
+                        background-color: #222222;
+                    }
+
+                    .xs_ul {
+                        width: 1072px;
+                        margin: 40px auto 0;
+                        font-size: 0;
+                        line-height: 0;
+                    }
+
+                    .xs_ul button {
+                        display: inline-block;
+                        font-size: 20px;
+                        line-height: 20px;
+                        background: #fff;
+                        margin: 20px;
+                    }
+
+                    .xs_ul button a {
+                        display: block;
+                        width: 76px;
+                        text-align: center;
+                        padding: 15px 30px;
+                        border: 1px solid #000;;
+                    }
+                </style>
+
+                <button class="xs_li_03" style="width: 76px;height: 30px;"><a href="aftersign.html" id="retuen">返回</a>
+                </button>
+                <button class="xs_li_03" onmousemove="" style="width: 76px;height: 30px;"><input type="submit"
+                                                                                                 style=" width:50px;height:20px;color: rgba(0,0,0,0);background: rgba(0,0,0,0);border: rgba(0,0,0,0);">
+                    <div style="margin-top: -17px">申请</div>
+                </button>
+            </div>
+
+        </form>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $(".xs_li_03").xs999(4);
+            });
+        </script>
+    </div>
+</div>
+</body>
+<script>
+    $(function () {
+        $('#roomidselect').change(function () {
+            var value = $(this).val();
+            $.ajax({
+                url: 'ajaxapply.jsp',
+//				dataType:'JSON',
+                type: 'post',
+                data: {value: value},
+                success: function (data) {
+                    var result = data;
+                    $('.detial').text(result);
+                }
+            })
+        })
+    });
+</script>
+</html>

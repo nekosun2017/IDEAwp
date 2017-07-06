@@ -1,0 +1,179 @@
+<%@ page language="java" import="java.util.*" contentType="text/html; charset=UTF-8" %>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>我的主页</title>
+    <style></style>
+</head>
+<link rel="stylesheet" type="text/css" href="../css/personal.css" media="screen" />
+<link rel="stylesheet" href="../css/icono.min.css">
+
+<body id="body">
+<!--<img  src="../image/BG1.jpg" style="width: -webkit-fill-available;height: auto;"/>
+-->
+
+<div id="head" style="margin-top: 320px;">
+    <!--<p>我是个头像</p>-->
+    <img id="tx" src="../image/tx/tx.jpeg" />
+</div>
+
+<hr color="#105BA3" size="1" style=";width: 8%;margin-top: 30px" />
+<p id="hi">HI,I'm Anerchy</p>
+<p id="hi">All in all,time will tell.</p>
+
+<div class="line" style="margin-left: 10%;">
+
+    <div class="middle" style="float: left;margin-top: 20px;">
+        <div style="margin-top: 30px;">
+            <p class="white2">专业：信息与计算科学</p>
+            <p class="white2">学历:大三</p>
+            <p class="white2">社区等级:华贵铂金</p>
+            <p class="white2">技能：精通Java，熟悉Android应用开发，熟悉PHP,JSP,JQ,JS,SSH,Javaweb,数据库应用开发，熟悉数字图像处理。</p>
+            <p class="white2">年龄:21</p>
+        </div>
+    </div>
+
+    <div class="middle2" style="margin-left: 20px;margin-top: 20px;float: left;">
+        <div style="margin-top: 30px;">
+            <p class="black">最近提问的问题</p>
+        </div>
+    </div>
+
+    <div class="small" style="float: left;margin-left: 0px;margin-top: 20px;">
+        <div style="margin-top: 40px;">
+            <p class="black">粉丝：2358</p>
+            <p class="black">关注：1048</p>
+            <p class="black">动态：442</p>
+            <p class="black">解决问题：205</p>
+            <p class="black">提问问题：105</p>
+        </div>
+
+    </div>
+
+    <div class="biger" style="overflow-y: scroll;margin-left: 20px;float: left;">
+        <!--<p>iam the bigger one</p>-->
+        <p class="white" style="margin-top: 40px;margin-left: 30px;">
+            Skills
+        </p>
+
+        <p class="white2" style="float:left;margin-right: 570px;margin-top: -10px;">
+            Android
+        </p>
+        <p class="white2" style="float:left;margin-top: -10px;">
+            60%
+        </p>
+
+        <p style="clear: both">
+        <div class="Bar">
+            <div style="width: 60%;">
+            </div>
+        </div>
+        </p>
+
+        <p class="white2" style="float: left;margin-right: 617px;">
+            PHP
+        </p>
+        <p class="white2" style="float: left;">
+            10%
+        </p>
+
+        <p style="clear: both">
+        <div class="Bar">
+            <div style="width: 10%;">
+            </div>
+        </div>
+        </p>
+        <p class="white2" style="float: left;margin-right: 606px;">
+            Java
+        </p>
+        <p class="white2" style="float: left;">
+            70%
+        </p>
+
+        <p style="clear: both">
+        <div class="Bar">
+            <div style="width: 70%;">
+            </div>
+        </div>
+        </p>
+
+        <p class="white2" style="float: left;margin-right: 606px;">
+            C++
+        </p>
+        <p class="white2" style="float: left;">
+            10%
+        </p>
+
+        <p style="clear: both">
+        <div class="Bar">
+            <div style="width: 10%;">
+            </div>
+        </div>
+        </p>
+    </div>
+<a href="Myactive.jsp">
+    <div  class="biger" style=" overflow-y: scroll;overflow-x:hidden;float: left;">
+
+        <div style="padding-top: 60px;padding-right: 30px;">
+            <!--在这里显示最近的一条动态-->
+            <p class="white3">深夜食堂，冷暖自知</p>
+            <p class="white4" >2017年6月18日11:12:22</p>
+
+            <p class="white2">&nbsp;&nbsp;午夜12点，报时钟响起，城市的一隅，属于一家食堂的时间开 始了。菜谱只有猪肉套餐，但你想吃的都可以点。这就是老板（小林薰 饰）的经营方针。 感觉这集的故事本身很好，但是可能是篇幅限制，很多情感都感觉铺垫太少， 有点突兀，换个剧场版来讲这个故事或许会好很多吧
+                <img src="../image/EG/eg1.jpg" style="margin: auto;margin-top: 20px;width: 700px;height: auto;"/>
+            </p>
+
+        </div>
+        <div class="cycle">
+
+        </div>
+    </div></a>
+
+    <div class="small" style="margin-left: 20px;float: left;">
+
+        <div style="margin-top: 60px;">
+
+            <div>
+                <div class="icono-pin" style="float: left;margin-top: -5px;margin-left: 20px;color:  rgb(51,102,153);">
+                </div>
+                <p class="black">白云区钟落潭镇广新路，388号</p>
+            </div>
+
+            <div>
+                <div class="icono-microphone" style="float: left;margin-top: 5px;margin-left: 20px;color:  rgb(51,102,153);">
+                </div>
+                <p class="black">18816781412</p>
+            </div>
+
+            <div>
+                <div class="icono-mail" style="float: left;margin-top: 2px;margin-left: 20px;color:  rgb(51,102,153);">
+                </div>
+                <p class="black">sy123mtr@qq.com</p>
+            </div>
+
+            <div>
+                <div class="icono-chain" style="float: left;margin-top: 6px;margin-left: 20px;color:  rgb(51,102,153);">
+
+                </div>
+                <p class="black">www.nekosun.com</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<!--<div class="zhan" style=" "></div>-->
+
+<div class="line" style="margin-left: 10%; float: none;">
+
+</div>
+
+
+
+</body>
+
+</html>

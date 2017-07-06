@@ -1,0 +1,40 @@
+div#mydiv{
+	margin-top: 50px;
+	margin-left: 10%;
+	padding: 20px;
+	width: 80%;
+	height: auto;
+	border: #909090 1px solid;
+	background: #fff;
+	color: #333;
+	
+	filter: progid: DXImageTransform.Microsoft.Shadow(color=#909090, direction=120, strength=4);
+	/*ie*/
+	-moz-box-shadow: 2px 2px 10px #909090;
+	/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	/*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090;
+	/*opera或ie9*/
+
+
+
+}
+
+#mydiv a:link { color: white; text-decoration: none;}
+/*#abca:visited { text-decoration: none; color: ;}*/
+#mydiv a:hover { text-decoration: underline; color: gainsboro;}
+
+
+
+.fonts{
+	font-size: 30px;
+	font-family: "楷体";
+	color: white;
+}
+
+.a{
+	font-size: 30px;
+	font-family: "楷体";
+	color: white;
+}

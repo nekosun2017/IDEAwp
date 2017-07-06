@@ -1,0 +1,15 @@
+
+div#title{
+	height:70px;
+	width: 100%;
+	background: aliceblue;
+	float: left;
+	margin-top: px;
+
+}
+
+div#username
+{margin:0;padding:0;line-height:1.7em;letter-spacing:1px;
+	font-family:Georgia,"Times New Roman",Times,serif;font-size:12px;color:#333;
+
+}

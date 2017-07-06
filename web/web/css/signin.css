@@ -1,0 +1,56 @@
+div.title {
+	width: -webkit-fill-available
+	height: 20px;
+	background: white;
+	margin-top: 0px;
+}
+div.main{
+	width: 101.23%;
+	height: 550px;
+	background:url(../image/ZKbg1.jpg);
+	margin-left: -8px;
+}
+
+div.signin{
+	position: absolute;
+	width: 350px;
+	height:400px;
+	margin-left: 60%;
+	margin-top: 70px;
+	background: rgba(255,255,255,0.5);
+	border: black;
+	/*color: white;*/
+
+}
+
+p.denglu{
+	text-align: center;
+	font-size: 25px;
+	font-family: "微软雅黑";
+}
+input.input{
+	height: 30px;
+	width: 80%;
+	margin-left: 30px;
+	margin-top: 20px;
+	font-size: 15px;
+	padding-left: 8px;
+	
+}
+
+p.welcome{
+    font-family: "楷体";
+	font-size: 26px;
+	vertical-align: auto;
+	color: #0071B8;
+	margin-left: 30px;
+}
+p.cattext{
+	font-family: "楷体";
+	font-size: 26px;
+	color: white;
+}
+p.cattextdiv{
+	margin-left: 100px;
+	
+}

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+		<!--导入一个可以鼠标悬浮显示下拉菜单的css-->
+		<link rel="stylesheet" type="text/css" href="../css/extend.css" />
+		<script type="text/javascript" src="../js/jquery-3.1.1.min.js"></script>
+		<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<!--导航栏，设置属性为无论怎么滚动页面，导航栏都在顶部，当然也可以设置为bottom-->
+		<nav class="nav navbar-default navbar-fixed-top" role="navigation">
+			<!--导航栏采取流布局方式-->
+			<div class="container-fluid">
+
+				<div class="navbar-header">
+					<!--浏览器界面小于一定阀值的时候，将会出现一个有三条横线的按钮，点击可以展开隐藏内容-->
+					<a href="#" class="navbar-brand">
+						<img src="../image/tx/tx2.jpeg" style="height: 50px;margin-top:-15px;" />
+					</a>
+
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+				</div>
+
+				<!--当浏览器缩小的时候，下面这些元素会消失，变成一个可弹出子菜单的小按钮-->
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav">
+						<!--默认这个选项是选中的（灰色图标）-->
+						<li class="active">
+							<a href="#">首页</a>
+						</li>
+						<li>
+							<a href="#">主题</a>
+						</li>
+						<!--下拉菜单-->
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">个人信息<span class="caret"></span></a>
+							<ul class="bs-menu dropdown-menu">
+								<li class="dropdown-submenu">
+									<a href="#">联系方式</a>
+									<ul class="bs-submenu dropdown-menu">
+										<li>
+											<a href="#">昵称</a>
+										</li>
+										<li>
+											<a href="#">手机号码</a>
+										</li>
+										<li>
+											<a href="#">邮件</a>
+										</li>
+									</ul>
+								</li>
+								<!--下拉菜单之间划一道横线作为分割
+                        -->
+								<li class="divider"></li>
+								<li>
+									<a href="#">更改联系方式</a>
+								</li>
+							</ul>
+						</li>
+					</ul>
+					<div class="navbar-form  navbar-right">
+						<a href="#" class="navber-link">上传资料</a>
+						<input type="text" class="form-control" placeholder="请输入关键字" />
+						<button class="btn btn-primary"> <span class="glyphicon glyphicon-search"></span> </button>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<!--防止导航栏盖住内容,本质上是使用空白来占位-->
+		<div style="height: 60px;"></div>
+
+		<!--网格界面-->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<ul id="mytab" class="nav nav-tabs">
+						<li class="active">
+							<a href='#xw1' data-toggle='tab'>新闻热点</a>
+						</li>
+						<li>
+							<a href='#xw2' data-toggle='tab'>城市天气</a>
+						</li>
+					</ul>
+					<div class="tab-content">
+						<!--fade有渐变效果-->
+						<div class="tab-pane fade in active" id="xw1">
+							<p>
+								<a href="#">孙杨200米夺金，打肿霍顿的脸</a><span class="pull-right">2016-8-10</span></p>
+						</div>
+						<div class="tab-pane fade" id="xw2">
+							<p>
+								<a href="#">降雨</a><span class="pull-right">2016-8-10</span></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<!--面包屑导航栏，作用是告诉访问者他们目前在网站中的位置以及如何返回-->
+				<div class="col-md-12">
+					<ul class="breadcrumb">
+						<li>
+							<a href="#">公司简章</a>
+						</li>
+						<!--自己目前所处的页面标灰-->
+						<li>
+							<a href="#" class="text-muted">部门介绍</a>
+						</li>
+					</ul>
+				</div>
+
+				<!--一行默认有12列，这里定义该缩略图占其中四列，一排可以放三个-->
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="../image/BG1.jpg" />
+						<div class="caption">
+							<!--该缩略图表加入链接-->
+							<h3><a>研发部门</a></h3>
+							<!--该缩略图标加入备注（纯文字，无连接-->
+							<p>1楼</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="thumbnail">
+						<img src="../image/BG1.jpg" />
+						<div class="caption">
+							<h3><a>管理部门</a></h3>
+							<p>2楼</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<!--将这4列再划分为12列，再把这12列进行子网格细分-->
+					<div class="col-md-6">
+						<div class="thumbnail">
+							<img src="../image/BG1.jpg" />
+							<div class="caption">
+								<h3><a>招聘信息</a></h3>
+								<p>3职位空缺</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="page-header">
+							<h2>详询官网</h2>
+						</div>
+						<p>电话：0515</p>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+		<!--使下面的h1居中-->
+		<div class="container">
+			<!--使用字体图标，BootStrap官方文档提供了很多-->
+			<h1 class="page-header"><span class="glyphicon glyphicon-bell"></span> 会员注册</h1>
+			<form class="form-horizontal">
+				<div class="form-group">
+					<!--设置文本框长度-->
+					<div class="col-md-5">
+						<input type="text" class="form-control" placeholder="请输入邮箱" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-5">
+						<input type="password" class="form-control" placeholder="请输入密码" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-5">
+						<input type="password" class="form-control" placeholder="再次输入密码" />
+					</div>
+				</div>
+				<div class="form-group">
+					<div class="col-md-5">
+						<button class="btn btn-primary">注   册</button>
+						<button class="btn btn-primary">取   消</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</body>
+
+</html>

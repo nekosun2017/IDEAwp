@@ -1,0 +1,70 @@
+body{
+	/*background: aliceblue;*/
+	margin-left: -1px;
+	height: auto;
+}
+
+
+div#title{
+	height:35px;
+	width: 100%;
+	background: aliceblue;
+	float: left;
+	
+}
+
+div#username
+	 {margin:0;padding:0;line-height:1.7em;letter-spacing:1px;
+	 /*font-family:Georgia,"Times New Roman",Times,serif;font-size:12px;color:#333;*/
+	 }
+	
+div.sample1{
+
+	background-color: rgba(105,105,105,0.1);
+	margin-top: 170px;
+	margin: auto;
+	width: 85%;
+	height: 260px;
+	clear: both;
+	padding: 20px;
+	font-family:"微软雅黑";
+	font-size:20px;
+
+
+	
+}
+
+div.sample{
+	background-color: rgba(105,105,105,0.1);
+	margin-top: 170px;
+	margin: auto;
+	width: 85%;
+	height: 290px;
+	clear: both;
+	padding: 20px;
+	font-family:"微软雅黑";
+	font-size:20px;
+
+}
+
+div#mydiv{
+
+	margin-left: 10%;
+	padding: 20px;
+	width: 80%;
+	height: 270px;
+	border: #909090 1px solid;
+	background: #fff;
+	color: #333;
+
+
+	-moz-box-shadow: 2px 2px 10px #909090;
+	/*firefox*/
+	-webkit-box-shadow: 2px 2px 10px #909090;
+	/*safari或chrome*/
+	box-shadow: 2px 2px 10px #909090;
+	/*opera或ie9*/
+
+
+
+}

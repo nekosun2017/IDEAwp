@@ -1,0 +1,36 @@
+body {
+    width: 1080px;
+    margin: 50px auto;
+    border: 2px solid black;
+    box-shadow: 2px 2px 2px black;
+}
+.center{
+    margin: 10px auto;
+    width: 1000px;
+}
+.wsk{
+    margin: 20px 0 20px 400px;
+}
+.nice{
+    margin: 10px 20px ;
+    width: 100px;
+    border: 1px solid black;
+    display: inline-block;
+}
+input{
+    width: 100px;
+}
+table{
+    margin: 20px auto;
+    border: 1px solid black;
+}
+table tr:first-child{
+    background: #b2ff83;
+}
+table tr:nth-child(2n){
+    background: #d4d8ff;
+}
+table tr td{
+    width: 100px;
+    border: 1px solid black;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+</head>
+<body>
+<span style="font-size:18px;"><script language="javaScript">
+  function validate(f){
+      if(!(/^\w{5,15}$/.test(f.userid.value))){
+          alert("用户ID必须是5~15位");
+          f.userid.focus();
+          return false;
+      }
+      if(!(/^\w{5,15}$/.test(f.password.value))){
+          alert("密码必须是5~15位");
+          f.password.focus();
+          return false;
+      }
+      return true;
+  }
+</script>
+<form method="post" action="check.jsp" onSubmit="return validate(this)">
+<table>
+  <tr>
+  <td colspan="2">用户登录程序</td>
+  </tr>
+  <tr>
+   <td>用户名ID:</td>
+   <td><input type="text" name="userid"></td>
+  </tr>
+  <td>密  码 </td>
+  <td><input type="password" name="password"></td>
+    </tr>
+  <tr>
+      <td colspan="2">
+      <input type="submit" value="登录">
+      <input type="reset" value="重置">
+      </td>
+  </tr>
+</table>
+
+</form></span>
+
+</body>
+</html>

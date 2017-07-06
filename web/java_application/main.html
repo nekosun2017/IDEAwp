@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>登录界面</title>
+</head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="base.css" media="screen">
+<link rel="stylesheet" type="text/css" href="button.css" media="screen">
+<div id="body">
+
+    <form method="post" action="logincheck.jsp" onSubmit="return validate(this)">
+
+        <div id="div1">
+            <input type="text" id="user" name="userid" placeholder="用户名"
+                   style="margin: 30px;width: 220px;height:20px;margin-top: 60px;"/>
+            <input type="password" name="password" id="psw" placeholder="密码"
+                   style="margin-left:30px;width: 220px;height:20px;"/><br/>
+            <input id="remember" type="checkbox" value="remember"
+                   style="position: relative;margin-left: 30px;margin-top: 9px;text-decoration-color: #002320;">记住我
+
+            <div style="margin-left: 210px;">
+                <a href="www.baidu.com" ;><p style="font-size: 14px;">忘记密码?></p></a>
+            </div>
+            <hr style="margin-top: 20px;"/>
+
+            <div style="margin-left: 26px;">
+
+                <div class="button gray" style="margin-top: 20px">
+                    <div class="shine"><input type="submit"
+                                              style=" width:50px;height:20px;color: rgba(0,0,0,0);background: rgba(0,0,0,0);border: rgba(0,0,0,0);"/>
+                    </div>
+                    登录
+                </div>
+
+                <div class="button red" style="margin-top: 20px">
+                    <div class="shine"></div>
+                    注册
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+
+</div>
+</div>
+
+
+<hr style="margin-top: 120px;width: 70%"/>
+<!--<hr style="margin-bottom: 0px;width: 70%"/>-->
+<p style="text-align: center;float: none">
+    nekosun-Anerchy共同所有 京 ICP 证 09002463 号|Copyright © 1999-2018, CSDN.NET, All Rights Reserved
+</p>
+
+</body>
+</html>
+<!--xixi-->

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap 弹出框位置选择的实例</title>
+	<meta name="description" content="Creating Popover with Bootstrap with plcement option.">
+	<link href="/try/bootstrap/twitter-bootstrap-v2/docs/assets/css/bootstrap.css" rel="stylesheet">
+	<style>
+		a {
+			margin-left : 400px;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<h2>使用Bootstrap plcement 选项创建弹出框</h2>
+	<div class="well">
+		<a href="#" id="example" class="btn btn-success" rel="popover" data-content="为我的网站创建一个提示框如此简单！" data-original-title="Bootstrap 弹出框">悬停弹出</a>
+	</div>
+	<div class="well">
+		<a href="#" id="example_left" class="btn btn-success" rel="popover" data-content="为我的网站创建一个提示框如此简单！" data-original-title="Bootstrap 弹出框">悬停弹出</a>
+	</div>
+	<div class="well">
+		<a href="#" id="example_top" class="btn btn-success" rel="popover" data-content="为我的网站创建一个提示框如此简单！" data-original-title="Bootstrap 弹出框">悬停弹出</a>
+	</div>
+	<div class="well">
+		<a href="#" id="example_bottom" class="btn btn-success" rel="popover" data-content="为我的网站创建一个提示框如此简单！" data-original-title="Bootstrap 弹出框">悬停弹出</a>
+	</div>
+</div>
+<script src="http://cdn.static.runoob.com/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="/try/bootstrap/twitter-bootstrap-v2/js/bootstrap-tooltip.js"></script>
+<script src="/try/bootstrap/twitter-bootstrap-v2/js/bootstrap-popover.js"></script>
+<script>
+	$(function (){
+		$("#example").popover();
+		$("#example_left").popover({placement:'left'});
+		$("#example_top").popover({placement:'top'});
+		$("#example_bottom").popover({placement:'bottom'});
+	});
+</script>
+
+</body>
+</html>
